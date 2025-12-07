@@ -37,15 +37,15 @@ local Window = Rayfield:CreateWindow({
       RememberJoins = true -- Set this to false to make them join the discord every time they load it up
    },
 
-   KeySystem = false, -- Set this to true to use our key system
+   KeySystem = true, -- Set this to true to use our key system
    KeySettings = {
       Title = "test",
       Subtitle = "Key System",
       Note = "pass the test", -- Use this to tell the user how to get a key
       FileName = "Key", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
       SaveKey = true, -- The user's key will be saved, but if you change the key, they will be unable to use your script
-      GrabKeyFromSite = true, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
-      Key = {"Key_id=1..turbo_hub_a_h_d_w_m..(--key"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
+      GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
+      Key = {"https://raw.githubusercontent.com/d3660379-rgb/Turbo-B.Y-Lori-s-Nightmare/refs/heads/main/Key"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
    }
 })
 
@@ -112,27 +112,28 @@ local Button = Tab:CreateButton({
    end,
 })
 
-
 local Button = Tab:CreateButton({
-   Name = "teleport to the exit",
+   Name = "Teleport to the exit (fixed)",
    Callback = function()
    -- The function that takes place when the button is pressed
-      -- Instant Teleport Script
-
-local Players = game:GetService("Players")
-local LocalPlayer = Players.LocalPlayer
-
-local function teleport()
-    local char = LocalPlayer.Character or LocalPlayer.CharacterAdded:Wait()
-    local root = char:WaitForChild("HumanoidRootPart")
-
-    root.CFrame = CFrame.new(219, 20, -231)
-end
-
-teleport()
+   loadstring(game:HttpGet("https://pastebin.com/raw/6vCV6gBM"))()
+   end,
+})
 
 
+local Button = Tab:CreateButton({
+   Name = "no esp tv",
+   Callback = function()
+   -- The function that takes place when the button is pressed
+   loadstring(game:HttpGet("https://pastebin.com/raw/0Lvjawc6"))()
+   end,
+})
 
+local Button = Tab:CreateButton({
+   Name = "esp tv",
+   Callback = function()
+   -- The function that takes place when the button is pressed
+   loadstring(game:HttpGet("https://pastebin.com/raw/6X7KdHwv"))()
    end,
 })
 
@@ -140,5 +141,5 @@ teleport()
 --[[loadstring(game:HttpGet("https://raw.githubusercontent.com/d3660379-rgb/Turbo-B.Y-Lori-s-Nightmare/refs/heads/main/Turbo-BY-Lori-s-Nightmare-script"))()--]]
 
 
+--Changing or modifying the code
 
---Changing or modifying the code is strictly prohibited.
