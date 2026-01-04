@@ -1,1 +1,1 @@
-Hi, this is my project. Please read the license before using my scripts. I'm currently working on a script called "Brookhaven rp" Please wait.
+Hello, a major update to the Lori Nightmare script is coming soon.
