@@ -1,6 +1,5 @@
 local Version = "1.6.41"
-local WindUI = loadstring(game:HttpGet("https://github.com/Footagesus/WindUI/releases/download/" .. Version .. "/main.lua"))()
-
+local WindUI = loadstring(game:HttpGet("https://raw.githubusercontent.com/d3660379-rgb/Test/refs/heads/main/main.lua"))()
 local Window = WindUI:CreateWindow({
     Title = "Turbo b.y hub Lori's Nightmare 4.2.5 release",
     Icon = "door-open", -- lucide icon. optional
