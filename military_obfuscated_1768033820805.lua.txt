@@ -3,7 +3,7 @@ local WindUI = loadstring(game:HttpGet("https://github.com/Footagesus/WindUI/rel
 local Window = WindUI:CreateWindow({
     Title = "Turbo b.y hub Lori's Nightmare 4.2.5 release",
     Icon = "door-open", -- lucide icon. optional
-    Author = "by Testmy_roblox123", -- optional
+    Author = "by  Testmy_roblox123", -- optional
 })
 
 
@@ -16,7 +16,7 @@ local MainTab = Window:Tab({
 
 local PlayerTab = Window:Tab({
     Title = "Player",
-    Icon = "bot", -- optional
+    Icon = "door-open", -- optional
     Locked = false,
 })
 
